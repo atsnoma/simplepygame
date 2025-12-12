@@ -25,14 +25,6 @@ while running:
     if keys[pg.K_RIGHT]:
         main_ship.x += 3
         if main_ship.x > width-xbox : main_ship.x = width-xbox
-    
-    if keys[pg.K_UP]:
-        main_ship.y -= 3
-        if main_ship.y < 0 : main_ship.y = 0
-    
-    if keys[pg.K_DOWN]:
-        main_ship.y += 3
-        if main_ship.y > height-ybox: main_ship.y = height-ybox
 
     screen.fill((20, 20, 30))
     pg.draw.rect(screen, (80, 80, 80), main_ship)
